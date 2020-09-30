@@ -1,0 +1,3 @@
+pip install click
+pip install pandas
+

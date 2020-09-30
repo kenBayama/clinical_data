@@ -1,0 +1,36 @@
+
+#### Requête n°1 #####
+
+SELECT 
+    date,
+    SUM(prod_qty*prod_price) AS ventes
+FROM transaction 
+GROUP BY date
+WHERE date BETWEEN '01/01/19' AND '31/12/19'
+ORDER BY date DESC
+
+#### Requête n°2 #####
+
+SELECT 
+    client_id,
+    t2.ventes_meuble AS ventes_meuble,
+    t3.ventes_deco AS ventes_deco
+    FROM transaction AS t1
+    LEFT JOIN 
+	    (
+	    SELECT SUM(prod_qty*prod_price) AS ventes_meuble
+	    FROM transaction 
+	    LEFT JOIN product_nomenclature AS t2 ON t1.prod_id = t2.product_id
+	    WHERE product_type='MEUBLE' 
+	    AND date BETWEEN '01/01/19' AND '31/12/19'
+	    GROUP BY client_id) 
+	    AS t2 ON (t1.client_id == t2.client_id)  
+	LEFT JOIN 
+	(
+	    SELECT SUM(prod_qty*prod_price) AS ventes_deco
+	    FROM transaction 
+	    LEFT JOIN product_nomenclature AS t2 ON t1.prod_id = t2.product_id
+	    WHERE product_type='DECO' AS ventes_deco
+	   	AND date BETWEEN '01/01/19' AND '31/12/19'
+	    GROUP BY client_id) 
+	    AS t3 ON (t1.client_id == t3.client_id) 
