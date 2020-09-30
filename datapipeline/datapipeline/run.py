@@ -1,7 +1,8 @@
 import click
 import pandas as pd
-
 import logging
+
+
 from datapipeline.test.preprocess.run import main as test_preprocess_main
 from datapipeline.test.process.run import main as test_process_main
 from datapipeline.preprocess.run import main as preprocess_main
@@ -16,6 +17,7 @@ tasks = {
     "process": process_main
 
 }
+
 logger = logging.getLogger(__name__)
 
 
