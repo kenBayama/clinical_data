@@ -9,7 +9,7 @@ Check the requirement file to know what need to be installed apart from python.
 
 ### Project Structure ###
 <blockquote>
-datapipeline/                       Root project directory
+datapipeline/&nbsp;&nbsp;&nbsp;&nbsp;Root project directory
 ├── docs/                           Documentation (.md/.rst files)
 ├── conf/                        	Config files (.yml)
 ├── logs/                           Logfiles
