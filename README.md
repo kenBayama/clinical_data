@@ -9,11 +9,9 @@ Check the requirement file to know what need to be installed apart from python.
 
 ### Project Structure 
 ```
-datapipeline/						Root project directory
+src/						Root project directory
 ├── docs/                           Documentation (.md/.rst files)
-├── conf/                        	Config files (.yml)
 ├── logs/                           Logfiles
-├── notebooks/                      EDA and validation (.ipynb)
 ├── scripts/                        Deployment, Dockerfile, etc.
 ├── data/
 │   ├── raw/                        Raw Data
@@ -26,7 +24,7 @@ datapipeline/						Root project directory
 │   │   ├── process
 │   │   └── result_sample
 ├── env/                         	Virtual env, add to .gitignore
-├── datapipeline/                   Top level package dir
+├── datapipeline/                   			Top level package dir
 │   ├── preprocess/                 Preprocessing (.py, not shown)
 │   ├── process/                    Processing (.py)
 │   ├── utils/                      Util functions used in source,
@@ -45,9 +43,8 @@ datapipeline/						Root project directory
 │   ├── __init__.py                 "python -m datapipeline"
 │   └── run.py                      Called from __main__.py
 ├── README.md                       Intro to package
-├── setup.py                        Installing the package
 ├── requirements.txt                Lists dependencies
-└── LICENSE.md         
+└── LICENSE.md
 ```
 .
 ├── build                   # Compiled files (alternatively `dist`)
