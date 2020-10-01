@@ -24,12 +24,14 @@ Check the requirement file to know what need to be installed apart from python.
 │	│   │   ├── process
 │	│   │   └── result_sample
 │	└── datapipeline/                   Top level package dir
-│	    ├── preprocess/                 Preprocessing (.py)
-│	    ├── process/                    Processing (.py)
+│	    ├── preprocess/                 Preprocessing (.py) "Is created when you lauch the preprocess test task"
+│	    ├── process/                    Processing (.py) "Is created when you lauch the process test task"
 │	    ├── utils/                      Util functions used in source,
 │	    │   ├── __init__.py              
-│	    │   ├── copy.py
-│	    │   └── io.py
+│	    │   ├── copy.py                 copy functions
+│	    │   ├── io.py                   IO functions
+│	    │   └── loggers.py              Loggers
+
 │	    ├── test/                       Testing environment
 │	    │   ├── preprocess/
 │	    │   ├── process/
@@ -210,8 +212,6 @@ def create_file_object(list_of_files,repo) :
 ```
 
 -	Create a configuration file which store all the path and allows to get the test path or the production path automatically by using the python_box
-
--	Improve de configurability of most of the parameters
 
 -	Implement the proper units tests and not only a test environnement
 
