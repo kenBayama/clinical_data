@@ -8,7 +8,7 @@ Check the requirement file to know what need to be installed apart from python.
 
 
 ### Project Structure 
-
+```
 datapipeline/						Root project directory
 ├── docs/                           Documentation (.md/.rst files)
 ├── conf/                        	Config files (.yml)
@@ -48,7 +48,7 @@ datapipeline/						Root project directory
 ├── setup.py                        Installing the package
 ├── requirements.txt                Lists dependencies
 └── LICENSE.md         
-
+```
 .
 ├── build                   # Compiled files (alternatively `dist`)
 ├── docs                    # Documentation files (alternatively `doc`)
