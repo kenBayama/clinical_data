@@ -21,9 +21,9 @@ tasks = {
 logger = logging.getLogger(__name__)
 
 
-def main(task):
+def main(task,path,dest):
     try:
-        tasks[task]()
+        tasks[task](path,dest)
     except:
         logger.error(f"Task {task} failed")
         raise
@@ -36,5 +36,8 @@ def main(task):
     required=True,
     help="Name of task to execute",
 )
-def main_cli(task):
-    main(task)
+@click.argument('path', required=True)
+@click.argument('dest', required=True)
+
+def main_cli(task,path,dest):
+    main(task,path,dest)

@@ -2,6 +2,7 @@
 import pandas as pd
 import re 
 import os
+import json
 
 
 from datetime import datetime
@@ -103,6 +104,9 @@ def write_preprocessed_data(dataset,file,repo,ext):
     if(ext == "csv") :
         dataset.to_csv(repo + file + "_" + horodate + ".csv",index=False)
     else :
-        dataset.to_json(repo + file +"_" + horodate + ".json",orient="records")
+        data = dataset.to_dict(orient='records')
+        dest = repo + file +"_" + horodate + ".json" 
+        with open( dest, 'w') as f:
+            json.dump(data, f,indent=2, sort_keys=True)
 
 

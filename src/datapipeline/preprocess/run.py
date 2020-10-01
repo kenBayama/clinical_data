@@ -2,22 +2,12 @@
 import pandas as pd
 import os
 import re
-import logging
+from datapipeline.utils.loggers import Preprocessing_logger
 
 
 from datapipeline.utils.io  import (load_data, write_preprocessed_data, 
 									create_file_object, file_object)
 from datapipeline.utils.copy  import copy_csv
-
-
-logger = logging.getLogger(__name__)
-
-
-raw_repo = 'data/raw/'
-preprocess_repo = 'data/preprocess/'
-process_repo = 'data/process/'
-
-list_of_files = os.listdir(raw_repo)
 
 
 def preprocess_c_trials (clinicalT):
@@ -70,8 +60,9 @@ def preprocess_pubmed(pubmed):
 
 
 
-def main():
-	 	
+def main(raw_repo,preprocess_repo):
+	
+	list_of_files = os.listdir(raw_repo)
 	list_of_file_object = list(create_file_object(list_of_files,raw_repo))
 	dict_ds = load_data (list_of_file_object)
 
@@ -88,7 +79,7 @@ def main():
 				write_preprocessed_data(preproc_c_trials,dict_ds[category]
 					.name,preprocess_repo,"csv")
 			except:
-				logger.error(f"The preprocessing of clinicaltrials data raise an error")
+				Preprocessing_logger.error("The preprocessing of clinicaltrials data raise an error")
 				raise
 		elif category == 'pubmed':
 			try:	
@@ -96,7 +87,7 @@ def main():
 				write_preprocessed_data(preproc_pubmed,dict_ds[category]
 					.name,preprocess_repo,"csv")
 			except:
-				logger.error(f"The preprocessing of pubmed data raised an error")
+				Preprocessing_logger.error("The preprocessing of pubmed data raised an error")
 				raise
 				
 	
@@ -105,6 +96,6 @@ def main():
 				copy_csv(raw_repo + dict_ds[category].name,preprocess_repo 
 					+ dict_ds[category].name)
 			except:
-				logger.error(f"The copy of the raw data with no preprocessing went wrong")
+				Preprocessing_logger.error("The copy of the raw data with no preprocessing went wrong")
 				raise
 				

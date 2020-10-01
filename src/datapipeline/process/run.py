@@ -6,12 +6,6 @@ import os
 from datapipeline.utils.io  import (load_data, write_preprocessed_data, 
 									create_file_object, file_object)
 
-raw_repo = 'data/raw/'
-preprocess_repo = 'data/preprocess/'
-process_repo = 'data/process/'
-
-list_of_files = os.listdir(preprocess_repo)
-
 
 def find_word_in_text(string, list_of_drug):
     """
@@ -138,13 +132,15 @@ def create_dict_of_drug(drug):
 
     return list_of_drug
 
-def main():
+def main(preprocess_repo,process_repo):
 
-	list_of_file_object = list(create_file_object(list_of_files,preprocess_repo))
-	dict_ds = load_data (list_of_file_object)
 
-	drug = dict_ds["drugs"].dataset
-	list_of_drug = create_dict_of_drug(drug)
+    list_of_files = os.listdir(preprocess_repo)
+    list_of_file_object = list(create_file_object(list_of_files,preprocess_repo))
+    dict_ds = load_data (list_of_file_object)
+
+    drug = dict_ds["drugs"].dataset
+    list_of_drug = create_dict_of_drug(drug)
 
 	
 	#prepare the clinical_trials and pubmed data to create the foreign keys 
@@ -152,25 +148,26 @@ def main():
 
 	
 
-	try:
-		prepared_c_trials = process_data(dict_ds['clinicaltrials']\
-			.dataset,list_of_drug,"scientific_title")
+    try:
+        prepared_c_trials = process_data(dict_ds['clinicaltrials']\
+            .dataset,list_of_drug,"scientific_title")
 
-		preprared_pubmed = process_data(dict_ds['pubmed'].dataset,list_of_drug,
+        preprared_pubmed = process_data(dict_ds['pubmed'].dataset,list_of_drug,
             "title")
-		
-		processed_journal = create_journal_ds(prepared_c_trials,preprared_pubmed)
 
-	except:
-		print("An error was raised while preparing the journal data")
+        processed_journal = create_journal_ds(prepared_c_trials,preprared_pubmed)
 
-	try:
+    except:
+        Processing_logger.error("An error was raised while preparing the journal data")
 
-		write_preprocessed_data(processed_journal,"journal",process_repo,"json")
-		write_preprocessed_data(drug,"drug",process_repo,"json")
-		write_preprocessed_data(prepared_c_trials,"clinical_trials",process_repo,"json")
-		write_preprocessed_data(preprared_pubmed,"pubmed",process_repo,"json")
+    try:
 
-	except:
-		print("An error was raised while writting the processed data")
+        write_preprocessed_data(processed_journal,"journal",process_repo,"json")
+        write_preprocessed_data(drug,"drug",process_repo,"json")
+        write_preprocessed_data(prepared_c_trials,"clinical_trials",process_repo,"json")
+        write_preprocessed_data(preprared_pubmed,"pubmed",process_repo,"json")
+
+    except:
+        Processing_logger.error("An error was raised while writting the processed data")
+      
 

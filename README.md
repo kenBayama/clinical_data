@@ -69,7 +69,7 @@ Check the requirement file to know what need to be installed apart from python.
 
 -	Lauch **the preprocess stage** :
 		
-			python -m datapipeline --task preprocess
+			python -m datapipeline --task preprocess "data/raw/" "data/preprocess/"
 
 
 
@@ -104,8 +104,7 @@ The result are stored in **the data/preprocess repo**
 
 -	Lauch **the process stage** :
 
-			python -m datapipeline --task process
-
+			python -m datapipeline --task process "data/preprocess/" "data/process/"
 
 ***The process stage allow you to transform the cleaned data into a bond graph which is represented throught three differents files linked through there foreign keys to one file, drug.json :***
 
