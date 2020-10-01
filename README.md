@@ -89,7 +89,7 @@ Concerning the pubmed files, the following cleaning are done   :
 	            Cleaning the  journal column to remove hexadecimal characters 
 
 #### clinicals_trials
-Concerning the clinical_trials files, the folowwing preprocessing are done :
+Concerning the clinical_trials files, the following preprocessing are done :
 
 	            Removing the wrong id and setting a proper one
 	            Formatting the datetime column to have the same format for each column
@@ -99,9 +99,7 @@ Concerning the clinical_trials files, the folowwing preprocessing are done :
 
 	           No cleaning required. 
 
- 		
-
- -	The result are stored in the data/preprocess repo
+The result are stored in **the data/preprocess repo**
 
 
 -	Lauch **the process stage** :
@@ -144,6 +142,8 @@ To get to this result the following processing stages were required :
         Aggregating by concatenation of string 
         Cleaning by using the clean_column function
         Creating an Index
+
+The result are stored in **the data/process repo**
 
 
 ***Data Model :*** 
