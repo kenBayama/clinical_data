@@ -127,6 +127,7 @@ Preparation
 Processing First Stage: 
 
 	-	Processing the data from clinical_trials and pubmed sources by :
+
 			Finding the drugs name in each scientic title or title column
 			Turning every letter in uppercase for latter use
 			Renaming the date column
@@ -134,8 +135,9 @@ Processing First Stage:
 
 Processing Second Stage: 
 
-	-	Creating the journal data from the new dataset from clinicals_client and pubmed by :	
-			Keeping only the journal, date_mention and atccode column
+	-	Creating the journal data from the new dataset from clinicals_client and pubmed by :
+
+            Keeping only the journal, date_mention and atccode column
             Joining the two dataframe.
             Turning every letter to uppercase
             Grouping by the column journal
