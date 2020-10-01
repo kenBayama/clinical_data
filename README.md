@@ -1,14 +1,14 @@
 This Project is a project of a Data Pipeline processing semi structured data from pharmaceutical input.
 
 
-#### Environnement ###
+### Environnement ###
 Python3.8
 
 Check the requirement file to know what need to be installed apart from python.
 
 
-#### Project Structure ####
-
+### Project Structure ###
+<blockquote>
 datapipeline/                       Root project directory
 ├── docs/                           Documentation (.md/.rst files)
 ├── conf/                        	Config files (.yml)
@@ -50,24 +50,40 @@ datapipeline/                       Root project directory
 └── LICENSE.md         
 
 
-#### Lauch the project ####
+### Lauch the project ###
 
-from the datapipeline repo :
-	cd datapipeline
 
-COMMAND :
+-	install and create a virtual environment :
+
+			pip install virtualenv
+			python3 -m venv env
+			.\env\Scripts\activate
+
+-	Install the required environnment project :
+	
+			pip install -r requirements.txt
+
+	
+
+-	from the datapipeline repo :
+
+			cd src
 
 -	Lauch the preprocess stage :
 		
 			python -m datapipeline --task preprocess
 
-		The preprocess stage allow you to preprocess and clean the data from the data/raw repo and stored the result in the data/preprocess repo
+The preprocess stage allow you to preprocess and clean :
+
+
+ the data from the data/raw repo and stored the result in the data/preprocess repo
 
 -	Lauch the process stage :
 
 			python -m datapipeline --task process
 
-		The process stage allow you to transform the cleaned data into a bond graph wich is represented throught four differents files linked through there foreign keys.  pubmed.json, clinical_trials.json, drug.json, journal.json
+The process stage allow you to transform the cleaned data into a bond graph which is represented throught four differents files linked through there foreign keys :
+  pubmed.json, clinical_trials.json, drug.json, journal.json
 
 Data Model : 
 
