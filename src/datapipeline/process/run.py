@@ -102,7 +102,7 @@ def create_journal_ds(c_trials,pubmed):
     journal = journal.apply(lambda x: x.astype(str).str.upper())
     journal = journal.groupby('journal')\
     	.agg(lambda column: ",".join(column)).reset_index('journal')
-    journal = journal.applymap(clean_column)
+    journal[['date_mention','atccode']] = journal[['date_mention','atccode']].applymap(clean_column)
     journal ['id']= journal.reset_index().index.astype(str)
 
     return journal
