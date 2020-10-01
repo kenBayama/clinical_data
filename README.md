@@ -149,30 +149,30 @@ Processing Second Stage:
 
 drug.json :
 	
-	atccode => **primary key**
+	atccode > primary key
 	drug
 
 
 journal.json :
 
-	id => **primary key**
-	atccode => ***foreign key***
+	id > primary key
+	atccode > foreign key
 	journal
 	date
 
 
 clinical_trials.json : 
 	
-	id => **primary key**
-	atccode => ***foreign key***
+	id > primary key
+	atccode > foreign key
 	scientific_title
 	date
 	journal
 
 pubmed.json :
 	
-	id => **Primary key** 
-	atccode => ***foreign Key***
+	id > Primary key 
+	atccode > foreign Key
 	title
 	date
 	journal
