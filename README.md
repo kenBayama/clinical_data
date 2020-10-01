@@ -118,13 +118,13 @@ Concerning the clinical_trials files, the folowwing preprocessing are done :
 
 To get to this result the following processing stages were required :
 
-#### Preparation:#
+#### Preparation:
 
 		Storing all relevant informationa about each files in a class of object called a file_object
 		Loading the data and stored them in dictionary of elment of the class dataset_object which contains the data and the category of that data
 		Creating a dictionary with the drug name as key and the atccode as value
 
-#### Processing First Stage:# 
+#### Processing First Stage: 
 
 -	Processing the data from clinical_trials and pubmed sources by :
 
@@ -133,7 +133,7 @@ To get to this result the following processing stages were required :
 		Renaming the date column
 		Producing new dataset from clinicals_trials and pubmed
 
-#### Processing Second Stage:# 
+#### Processing Second Stage:
 
 -	Creating the journal data from the new dataset from clinicals_client and pubmed by :
 
@@ -179,19 +179,20 @@ pubmed.json :
 	date
 	journal
 
-### Improvement => "Pour Aller Plus loin" ###
+### Improvement => "Pour aller plus loin" ###
 
-Storing the data in a PostgreSql database et with SqlAlchemy to produce one file that represent properly the graph bond.
 
-Implements more generators in the code for better performance and scalability.
+-	Storing the data in a PostgreSql database et with SqlAlchemy to produce one file that represent properly the graph bond.
 
-Create a configuration file which store all the path and allows to get the test path or the production path automatically by using the python_box
+-	Implements more generators in the code for better performance and scalability.
 
-Improve de configurability of most of the parameters
+-	Create a configuration file which store all the path and allows to get the test path or the production path automatically by using the python_box
 
-Create logs files for debug
+-	Improve de configurability of most of the parameters
 
-Implement the proper units tests and not only a test environnement
+-	Create logs files for debug
 
-Implement better try except for a better readbility and debugging
+-	Implement the proper units tests and not only a test environnement
+
+-	Implement better try except for a better readbility and debugging
 
