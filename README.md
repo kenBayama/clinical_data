@@ -81,8 +81,8 @@ There are three categories of data and just two required:
 #### pubmed 
 Concerning the pubmed files, the following cleaning are done   :
 
-	            * Removing the space in the beguinning and the end of the scientific_title column
-	            * Dropping the row with NaN data in it
+	            Removing the space in the beguinning and the end of the scientific_title column
+	            Dropping the row with NaN data in it
 	            Converting the date column into a panda datetime column
 	            Formatting the datetime column to have the same format for each column
 	            Cleaning the journal column to remove hexadecimal characters
@@ -117,14 +117,19 @@ Concerning the clinical_trials files, the folowwing preprocessing are done :
 * journal.json
 
 To get to this result the following processing stages were required :
+
 	-	Storing all relevant informationa about each files in a class of object called a file_object
 	-	Loading the data and stored them in dictionary of elment of the class dataset_object which contains the data and the category of that data
 	-	Creating a dictionary with the drug name as key and the atccode as value
+
+
 	-	Processing the data from clinical_trials and pubmed sources by :
 			Finding the drugs name in each scientic title or title column
 			Turning every letter in uppercase for latter use
 			Renaming the date column
 			Producing new dataset from clinicals_trials and pubmed
+
+
 	-	Creating the journal data from the new dataset from clinicals_client and pubmed by :	
 			Keeping only the journal, date_mention and atccode column
             Joining the two dataframe.
