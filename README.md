@@ -47,8 +47,8 @@ Check the requirement file to know what need to be installed apart from python.
 ```
 
 
-### Lauch the project ###
-
+Lauch the project
+=
 
 -	install and create a virtual environment :
 
