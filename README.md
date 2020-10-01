@@ -77,7 +77,7 @@ The preprocess stage allow you to preprocess and clean :
 The data is loaded from the data/raw repo
 There are three categories of data and just two required:
 
-####pubmed 
+#### pubmed 
 
 	            Concerning the pubmed files, the following cleaning are done   : 
 	            Removing the space in the beguinning and the end of the scientific_title column
@@ -87,14 +87,14 @@ There are three categories of data and just two required:
 	            Cleaning the journal column to remove hexadecimal characters
 	            Cleaning the  journal column to remove hexadecimal characters 
 
-####clinicals_trials
+#### clinicals_trials
 
  	            Concerning tje clinicals_trials files, the folowwing preprocessing are done : 
 	            Removing the wrong id and setting a proper one
 	            Formatting the datetime column to have the same format for each column
 	            Cleaning the title column by removing unnecessary double quote chracter
 
-####drugs
+#### drugs
 
 	           No cleaning required. 
 
