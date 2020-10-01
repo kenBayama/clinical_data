@@ -78,8 +78,8 @@ The data is loaded from the data/raw repo
 There are three categories of data and just two required:
 
 #### pubmed 
+Concerning the pubmed files, the following cleaning are done   :
 
-	            Concerning the pubmed files, the following cleaning are done   : 
 	            Removing the space in the beguinning and the end of the scientific_title column
 	            Dropping the row with NaN data in it
 	            Converting the date column into a panda datetime column
@@ -88,8 +88,8 @@ There are three categories of data and just two required:
 	            Cleaning the  journal column to remove hexadecimal characters 
 
 #### clinicals_trials
-
- 	            Concerning tje clinicals_trials files, the folowwing preprocessing are done : 
+Concerning the clinical_trials files, the folowwing preprocessing are done :
+ 
 	            Removing the wrong id and setting a proper one
 	            Formatting the datetime column to have the same format for each column
 	            Cleaning the title column by removing unnecessary double quote chracter
