@@ -109,7 +109,7 @@ Concerning the clinical_trials files, the folowwing preprocessing are done :
 			python -m datapipeline --task process
 
 
-***The process stage allow you to transform the cleaned data into a bond graph which is represented throught four differents files linked through there foreign keys : ***
+***The process stage allow you to transform the cleaned data into a bond graph which is represented throught four differents files linked through there foreign keys :***
 
 >pubmed.json, clinical_trials.json, drug.json, journal.json
 
