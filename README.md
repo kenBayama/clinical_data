@@ -66,7 +66,6 @@ Check the requirement file to know what need to be installed apart from python.
 
 			cd src
 
-- - -
 
 -	Lauch the preprocess stage :
 		
@@ -74,7 +73,7 @@ Check the requirement file to know what need to be installed apart from python.
 
 
 
-The preprocess stage allow you to preprocess and clean :
+**The preprocess stage allow you to preprocess and clean** :
 
 The data is loaded from the data/raw repo
 There are three categories of data and just two required:
@@ -105,14 +104,13 @@ Concerning the clinical_trials files, the folowwing preprocessing are done :
  -	The result are stored in the data/preprocess repo
 
 
-- - - 
 -	Lauch the process stage :
 
 			python -m datapipeline --task process
 
 
-###The process stage allow you to transform the cleaned data into a bond graph which 
-is represented throught four differents files linked through there foreign keys
+***The process stage allow you to transform the cleaned data into a bond graph which 
+is represented throught four differents files linked through there foreign keys : ***
 
 >pubmed.json, clinical_trials.json, drug.json, journal.json
 
