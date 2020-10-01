@@ -179,7 +179,8 @@ pubmed.json :
 	date
 	journal
 
-### Improvement :"Pour aller plus loin" ###
+### Improvement : " Pour aller plus loin " ###
+
 
 
 -	Storing the data in a PostgreSql database et with SqlAlchemy to produce one file that represent properly the graph bond.
