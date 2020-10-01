@@ -118,13 +118,13 @@ Concerning the clinical_trials files, the folowwing preprocessing are done :
 
 To get to this result the following processing stages were required :
 
-Preparation
+####Preparation:#
 
-	Storing all relevant informationa about each files in a class of object called a file_object
-	Loading the data and stored them in dictionary of elment of the class dataset_object which contains the data and the category of that data
-	Creating a dictionary with the drug name as key and the atccode as value
+		Storing all relevant informationa about each files in a class of object called a file_object
+		Loading the data and stored them in dictionary of elment of the class dataset_object which contains the data and the category of that data
+		Creating a dictionary with the drug name as key and the atccode as value
 
-Processing First Stage: 
+####Processing First Stage:# 
 
 -	Processing the data from clinical_trials and pubmed sources by :
 
@@ -133,7 +133,7 @@ Processing First Stage:
 		Renaming the date column
 		Producing new dataset from clinicals_trials and pubmed
 
-Processing Second Stage: 
+####Processing Second Stage:# 
 
 -	Creating the journal data from the new dataset from clinicals_client and pubmed by :
 
