@@ -48,9 +48,9 @@ Check the requirement file to know what need to be installed apart from python.
 
 
 ### Lauch the project #
-=
 
--	install and create a virtual environment :
+
+-	Install and create a virtual environment :
 
 			pip install virtualenv
 			python3 -m venv env
@@ -66,11 +66,13 @@ Check the requirement file to know what need to be installed apart from python.
 
 			cd src
 
+- - -
+
 -	Lauch the preprocess stage :
 		
 			python -m datapipeline --task preprocess
 
-- - -
+
 
 The preprocess stage allow you to preprocess and clean :
 
