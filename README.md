@@ -67,13 +67,13 @@ Check the requirement file to know what need to be installed apart from python.
 			cd src
 
 
--	Lauch the preprocess stage :
+-	Lauch **the preprocess stage** :
 		
 			python -m datapipeline --task preprocess
 
 
 
-**The preprocess stage allow you to preprocess and clean** :
+***The preprocess stage allow you to preprocess and clean*** :
 
 The data is loaded from the data/raw repo
 There are three categories of data and just two required:
@@ -104,7 +104,7 @@ Concerning the clinical_trials files, the folowwing preprocessing are done :
  -	The result are stored in the data/preprocess repo
 
 
--	Lauch the process stage :
+-	Lauch **the process stage** :
 
 			python -m datapipeline --task process
 
