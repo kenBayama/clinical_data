@@ -9,29 +9,29 @@ Check the requirement file to know what need to be installed apart from python.
 
 ### Project Structure 
 ```
-src/						Root project directory
+src/                                Root project directory
 ├── docs/                           Documentation (.md/.rst files)
 ├── logs/                           Logfiles
 ├── scripts/                        Deployment, Dockerfile, etc.
 ├── data/
 │   ├── raw/                        Raw Data
 │   ├── preprocess/                 Preprocessed Data
-│   ├── process/     				Processed Data
-│   ├── result_sample/     			An Example of the results
-│   ├── test/     					An Example of the results
-│   │   ├── raw                	preprocess, model. 
+│   ├── process/                    Processed Data
+│   ├── result_sample/              Example of the results
+│   ├── test/                       An Example of the results
+│   │   ├── raw                     preprocess, model. 
 │   │   ├── preprocess
 │   │   ├── process
 │   │   └── result_sample
-├── env/                         	Virtual env, add to .gitignore
-├── datapipeline/                   			Top level package dir
+├── env/                            Virtual env, add to .gitignore
+├── datapipeline/                  	Top level package dir
 │   ├── preprocess/                 Preprocessing (.py, not shown)
 │   ├── process/                    Processing (.py)
 │   ├── utils/                      Util functions used in source,
 │   │   ├── __init__.py              
-│   │   ├── copy.py 					
+│   │   ├── copy.py
 │   │   └── io.py
-│   ├── test/                     	Test py files
+│   ├── test/                       Test py files
 │   │   ├── preprocess/
 │   │   ├── process/
 │   │   ├── utils/
