@@ -8,47 +8,46 @@ Check the requirement file to know what need to be installed apart from python.
 
 
 ### Project Structure ###
-<blockquote>
-datapipeline/&nbsp;&nbsp;&nbsp;&nbsp;Root project directory
-├── docs/                           Documentation (.md/.rst files)
-├── conf/                        	Config files (.yml)
-├── logs/                           Logfiles
-├── notebooks/                      EDA and validation (.ipynb)
-├── scripts/                        Deployment, Dockerfile, etc.
-├── data/
-│   ├── raw/                        Raw Data
-│   ├── preprocess/                 Preprocessed Data
-│   ├── process/     				Processed Data
-│   ├── result_sample/     			An Example of the results
-│   ├── test/     					An Example of the results
-│   │   ├── raw                	preprocess, model. 
-│   │   ├── preprocess
-│   │   ├── process
-│   │   └── result_sample
-├── env/                         	Virtual env, add to .gitignore
-├── datapipeline/                   Top level package dir
-│   ├── preprocess/                 Preprocessing (.py, not shown)
-│   ├── process/                    Processing (.py)
-│   ├── utils/                      Util functions used in source,
-│   │   ├── __init__.py              
-│   │   ├── copy.py 					
-│   │   └── io.py
-│   ├── test/                     	Test py files
-│   │   ├── preprocess/
-│   │   ├── process/
-│   │   ├── utils/
-│   │   │   ├── __init__.py
-│   │   │   ├── copy.py
-│   │   │   └── io.py
-│   │   └── __init__.py
-│   ├── __main__.py                 Package execution entry point:
-│   ├── __init__.py                 "python -m datapipeline"
-│   └── run.py                      Called from __main__.py
-├── README.md                       Intro to package
-├── setup.py                        Installing the package
-├── requirements.txt                Lists dependencies
-└── LICENSE.md         
-</blockquote>  
+datapipeline/&nbsp;&nbsp;&nbsp;&nbsp;Root&nbsp;project&nbsp;directory
+├──&nbsp;docs/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Documentation&nbsp;(.md/.rst&nbsp;files)
+├──&nbsp;conf/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Config&nbsp;files&nbsp;(.yml)
+├──&nbsp;logs/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logfiles
+├──&nbsp;notebooks/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDA&nbsp;and&nbsp;validation&nbsp;(.ipynb)
+├──&nbsp;scripts/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deployment,&nbsp;Dockerfile,&nbsp;etc.
+├──&nbsp;data/
+│&nbsp;&nbsp;&nbsp;├──&nbsp;raw/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Raw&nbsp;Data
+│&nbsp;&nbsp;&nbsp;├──&nbsp;preprocess/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preprocessed&nbsp;Data
+│&nbsp;&nbsp;&nbsp;├──&nbsp;process/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				Processed&nbsp;Data
+│&nbsp;&nbsp;&nbsp;├──&nbsp;result_sample/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			An&nbsp;Example&nbsp;of&nbsp;the&nbsp;results
+│&nbsp;&nbsp;&nbsp;├──&nbsp;test/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;					An&nbsp;Example&nbsp;of&nbsp;the&nbsp;results
+│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;raw&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	preprocess,&nbsp;model.&nbsp;
+│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;preprocess
+│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;process
+│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;result_sample
+├──&nbsp;env/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Virtual&nbsp;env,&nbsp;add&nbsp;to&nbsp;.gitignore
+├──&nbsp;datapipeline/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top&nbsp;level&nbsp;package&nbsp;dir
+│&nbsp;&nbsp;&nbsp;├──&nbsp;preprocess/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preprocessing&nbsp;(.py,&nbsp;not&nbsp;shown)
+│&nbsp;&nbsp;&nbsp;├──&nbsp;process/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Processing&nbsp;(.py)
+│&nbsp;&nbsp;&nbsp;├──&nbsp;utils/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Util&nbsp;functions&nbsp;used&nbsp;in&nbsp;source,
+│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;__init__.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;copy.py&nbsp;					
+│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;io.py
+│&nbsp;&nbsp;&nbsp;├──&nbsp;test/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Test&nbsp;py&nbsp;files
+│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;preprocess/
+│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;process/
+│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;utils/
+│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;__init__.py
+│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├──&nbsp;copy.py
+│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;io.py
+│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└──&nbsp;__init__.py
+│&nbsp;&nbsp;&nbsp;├──&nbsp;__main__.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Package&nbsp;execution&nbsp;entry&nbsp;point:
+│&nbsp;&nbsp;&nbsp;├──&nbsp;__init__.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"python&nbsp;-m&nbsp;datapipeline"
+│&nbsp;&nbsp;&nbsp;└──&nbsp;run.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called&nbsp;from&nbsp;__main__.py
+├──&nbsp;README.md&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intro&nbsp;to&nbsp;package
+├──&nbsp;setup.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Installing&nbsp;the&nbsp;package
+├──&nbsp;requirements.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lists&nbsp;dependencies
+└──&nbsp;LICENSE.md&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</blockquote>&nbsp;&nbsp;
 
 ### Lauch the project ###
 
