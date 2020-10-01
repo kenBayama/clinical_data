@@ -111,10 +111,10 @@ Concerning the clinical_trials files, the folowwing preprocessing are done :
 
 ***The process stage allow you to transform the cleaned data into a bond graph which is represented throught three differents files linked through there foreign keys to one file, drug.json :***
 
->pubmed.json
->clinical_trials.json
->drug.json
->journal.json
+* pubmed.json
+* clinical_trials.json
+* drug.json
+* journal.json
 
 To get to this result the following processing stages were required :
 	-	Storing all relevant informationa about each files in a class of object called a file_object
