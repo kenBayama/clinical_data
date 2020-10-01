@@ -81,8 +81,8 @@ There are three categories of data and just two required:
 #### pubmed 
 Concerning the pubmed files, the following cleaning are done   :
 
-	            *Removing the space in the beguinning and the end of the scientific_title column
-	            *Dropping the row with NaN data in it
+	            * Removing the space in the beguinning and the end of the scientific_title column
+	            * Dropping the row with NaN data in it
 	            Converting the date column into a panda datetime column
 	            Formatting the datetime column to have the same format for each column
 	            Cleaning the journal column to remove hexadecimal characters
@@ -166,7 +166,7 @@ pubmed.json :
 	date
 	journal
 
-#### Improvement => "Pour Aller Plus loin" ###
+### Improvement => "Pour Aller Plus loin" ###
 
 Storing the data in a PostgreSql database et with SqlAlchemy to produce one file that represent properly the graph bond.
 
