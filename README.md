@@ -184,15 +184,34 @@ pubmed.json :
 
 -	Storing the data in a PostgreSql database et with SqlAlchemy to produce one file that represent properly the graph bond.
 
--	Implements more generators in the code for better performance and scalability.
+-	Implements more generators in the code for better performance and scalability. It allow a lower memory usage thanks to a lazy evaluation
+
+```
+
+Normal Function : 
+
+def find_even_number_function(number_stream):
+    list_file_object = []
+    for e in list_of_files :
+        cat_and_ext = re.split(r'\.',e);
+        f = file_object(e, re.sub('[^a-zA-Z]+', '',cat_and_ext[0]),
+            cat_and_ext[1],repo)
+        list_file_object.append(f)
+    return list_file_object
+
+Generator Function : 
+
+def create_file_object(list_of_files,repo) :
+    for e in list_of_files :
+        cat_and_ext = re.split(r'\.',e);
+        f = file_object(e, re.sub('[^a-zA-Z]+', '',cat_and_ext[0]),
+            cat_and_ext[1],repo)
+        yield f
+```
 
 -	Create a configuration file which store all the path and allows to get the test path or the production path automatically by using the python_box
 
 -	Improve de configurability of most of the parameters
 
--	Create logs files for debug
-
 -	Implement the proper units tests and not only a test environnement
-
--	Implement better try except for a better readbility and debugging
 
