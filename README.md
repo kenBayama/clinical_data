@@ -103,12 +103,12 @@ There are three categories of data and just two required:
  -	The result are stored in the data/preprocess repo
 
 
-
+- - - 
 -	Lauch the process stage :
 
 			python -m datapipeline --task process
 
-- - - 
+
 ###The process stage allow you to transform the cleaned data into a bond graph which 
 is represented throught four differents files linked through there foreign keys
 
