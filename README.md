@@ -76,10 +76,10 @@ Python3.8
 ***The preprocess stage allow you to preprocess and clean*** :
 
 The data is loaded from the data/raw repo
-There are three categories of data and just two required:
+There are three categories of data and just two require to be preprocessed :
 
 #### pubmed 
-Concerning the pubmed files, the following cleaning are done   :
+Concerning the pubmed files, the following preprocessing are done   :
 
 	            Removing the space in the beguinning and the end of the scientific_title column
 	            Dropping the row with NaN data in it
@@ -117,8 +117,8 @@ To get to this result the following processing stages were required :
 
 #### Preparation:
 
-		Storing all relevant informationa about each files in a class of object called a file_object
-		Loading the data and stored them in dictionary of elment of the class dataset_object which contains the data and the category of that data
+		Storing all relevant information about each files in a class of object called a file_object
+		Loading the data and store them in a dictionary of element of the  dataset_object class which contains the data and the category of that data
 		Creating a dictionary with the drug name as key and the atccode as value
 
 #### Processing First Stage: 
@@ -128,11 +128,11 @@ To get to this result the following processing stages were required :
 		Finding the drugs name in each scientic title or title column
 		Turning every letter in uppercase for latter use
 		Renaming the date column
-		Producing new dataset from clinicals_trials and pubmed
+		Producing new datasets from clinicals_trials and pubmed data
 
 #### Processing Second Stage:
 
--	Creating the journal data from the new dataset from clinicals_client and pubmed by :
+-	Creating the journal data from the new datasets from clinicals_client and pubmed data by :
 
         Keeping only the journal, date_mention and atccode column
         Joining the two dataframe.
@@ -182,7 +182,7 @@ pubmed.json :
 
 
 
--	Storing the data in a PostgreSql database et with SqlAlchemy to produce one file that represent properly the graph bond.
+-	Storing the data in a **PostgreSql** database et with **SqlAlchemy** to produce one file that represent properly the graph bond.
 
 -	Implements more generators in the code for better performance and scalability. It allow a lower memory usage thanks to a lazy evaluation
 
@@ -209,7 +209,7 @@ def create_file_object(list_of_files,repo) :
         yield f
 ```
 
--	Create a configuration file which store all the path and allows to get the test path or the production path automatically by using the python_box
+-	Create a configuration file which store all the path and allows to get the test path or the production path automatically by using the **python_box**
 
 -	Implement the proper units tests and not only a test environnement
 

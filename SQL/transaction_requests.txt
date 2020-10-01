@@ -1,5 +1,11 @@
+#Enoncé 1 : 
 
-#### Requête n°1 #####
+Je vous propose de commencer par réaliser une requête SQL simple permettant 
+de trouver le chiffre d’affaires (le montant total des ventes), jour par jour, 
+du 1er janvier 2019 au 31 décembre 2019. Le résultat sera trié 
+sur la date à laquelle la commande a été passée
+
+	#### Requête n°1 #####
 
 SELECT 
     date,
@@ -9,7 +15,13 @@ GROUP BY date
 WHERE date BETWEEN '01/01/19' AND '31/12/19'
 ORDER BY date DESC
 
-#### Requête n°2 #####
+#Enoncé 2 : 
+
+Réaliser une requête un peu plus complexe qui permet de déterminer, 
+par client et sur la période allant du 1er janvier 2019 au 31 décembre 2019, 
+les ventes meuble et déco réalisées.
+
+	#### Requête n°2 #####
 
 SELECT 
     client_id,
