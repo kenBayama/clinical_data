@@ -70,31 +70,33 @@ Check the requirement file to know what need to be installed apart from python.
 		
 			python -m datapipeline --task preprocess
 
+- - -
 
 The preprocess stage allow you to preprocess and clean :
 
 The data is loaded from the data/raw repo
 There are three categories of data and just two required:
 
-pubmed 
-	 			
-	 			Concerning the pubmed files, the following cleaning are done   : 
-	 		 	Removing the space in the beguinning and the end of the scientific_title column
+####pubmed 
+
+	            Concerning the pubmed files, the following cleaning are done   : 
+	            Removing the space in the beguinning and the end of the scientific_title column
 	            Dropping the row with NaN data in it
 	            Converting the date column into a panda datetime column
 	            Formatting the datetime column to have the same format for each column
 	            Cleaning the journal column to remove hexadecimal characters
 	            Cleaning the  journal column to remove hexadecimal characters 
 
-clinicals_trials
+####clinicals_trials
 
- 				Concerning tje clinicals_trials files, the folowwing preprocessing are done : 
-	 			Removing the wrong id and setting a proper one
+ 	            Concerning tje clinicals_trials files, the folowwing preprocessing are done : 
+	            Removing the wrong id and setting a proper one
 	            Formatting the datetime column to have the same format for each column
 	            Cleaning the title column by removing unnecessary double quote chracter
-drugs
 
-				No cleaning required. 
+####drugs
+
+	           No cleaning required. 
 
  		
 
@@ -106,6 +108,7 @@ drugs
 
 			python -m datapipeline --task process
 
+- - - 
 ###The process stage allow you to transform the cleaned data into a bond graph which 
 is represented throught four differents files linked through there foreign keys
 
