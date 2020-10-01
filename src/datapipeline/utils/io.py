@@ -1,6 +1,7 @@
 # coding=utf-8
 import pandas as pd
 import re 
+import os
 
 
 from datetime import datetime
@@ -59,11 +60,15 @@ def create_file_object(list_of_files,repo) :
 
 
 
-def write_preprocessed_data(dataset,name,path,ext):
+def write_preprocessed_data(dataset,file,repo,ext):
     horodate = datetime.now().strftime("%m%d%Y_%H%M%S")
+
+    if not os.path.exists(repo):
+        os.makedirs(repo)
+        
     if(ext == "csv") :
-        dataset.to_csv(path + name + "_" + horodate + ".csv",index=False)
+        dataset.to_csv(repo + file + "_" + horodate + ".csv",index=False)
     else :
-        dataset.to_json(path + name +"_" + horodate + ".json",orient="records")
+        dataset.to_json(repo + file +"_" + horodate + ".json",orient="records")
 
 
