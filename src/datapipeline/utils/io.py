@@ -7,6 +7,10 @@ import os
 from datetime import datetime
 
 class dataset_object:
+    """
+    This class allow you to store the data and the category of these data
+ 
+    """
     def __init__(self,  dataset,name):
          self.dataset, self.name =  dataset, name
 
@@ -14,7 +18,7 @@ class dataset_object:
 
 class file_object:
     """
-    This class allow you to store all the main information concerning the raw files
+    This class allow you to store detailed informations concerning the raw files
 
     """
     def __init__(self, name, category, extension, path):
@@ -22,6 +26,25 @@ class file_object:
 
 
 def load_data (list_of_file_object):
+    """
+    Description :
+        This function allow you to load data from a list of file_object 
+        and store those data in a dataset_object instance with the category of file 
+        those data have been loaded from. Then store these object in a dictionary where the 
+        keys is the category of the file where the data are from.
+        Based on the extension of the files : 
+            Loading the data from the file 
+            If the are more one file, the respective dataframe are concatenate
+            Storing the in a dictionary with the category as the key
+
+    Args:
+        list_of_file_object: list of file_object
+    
+    Returns:
+        output: dict, key : string
+                     value : dataset_object 
+    """
+
     dict_ds = {}
     for f in list_of_file_object:
         name_and_ext = re.split(r'\.',f.name)
@@ -48,8 +71,19 @@ def load_data (list_of_file_object):
 
 def create_file_object(list_of_files,repo) :
     """
-    This function create from the list of files stored in the repo 
-    the corresponding file_object
+    Description :
+        This function allow you to create a file_object 
+        where you can store file's data and metadata :
+
+            Splitting the name of the file base on a coma
+            Storing informations in the file_object like category, 
+            extension, name and repository
+    Args:
+        list_of_files: list of string 
+        repo : string
+    
+    Returns:
+        output: file_object
     """
     
     for e in list_of_files :
