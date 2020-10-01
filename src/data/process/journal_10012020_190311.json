@@ -36,9 +36,9 @@
       "A04AD"
     ],
     "date_mention": [
-      "01/01/2019",
+      "01/01/2020",
       "27/04/2020",
-      "01/01/2020"
+      "01/01/2019"
     ],
     "id": "3",
     "journal": "JOURNAL OF EMERGENCY NURSING"
@@ -65,8 +65,8 @@
   },
   {
     "atccode": [
-      "V03AB",
-      "S03AA"
+      "S03AA",
+      "V03AB"
     ],
     "date_mention": [
       "01/01/2020"
@@ -79,16 +79,16 @@
       "A01AD"
     ],
     "date_mention": [
-      "03/01/2020",
-      "02/01/2020"
+      "02/01/2020",
+      "03/01/2020"
     ],
     "id": "7",
     "journal": "THE JOURNAL OF ALLERGY AND CLINICAL IMMUNOLOGY. IN PRACTICE"
   },
   {
     "atccode": [
-      "A03BA",
-      "R01AD"
+      "R01AD",
+      "A03BA"
     ],
     "date_mention": [
       "03/01/2020",
