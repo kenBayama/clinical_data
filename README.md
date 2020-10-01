@@ -80,8 +80,8 @@ There are three categories of data and just two required:
 #### pubmed 
 Concerning the pubmed files, the following cleaning are done   :
 
-	            Removing the space in the beguinning and the end of the scientific_title column
-	            Dropping the row with NaN data in it
+	            *Removing the space in the beguinning and the end of the scientific_title column
+	            *Dropping the row with NaN data in it
 	            Converting the date column into a panda datetime column
 	            Formatting the datetime column to have the same format for each column
 	            Cleaning the journal column to remove hexadecimal characters
@@ -89,7 +89,7 @@ Concerning the pubmed files, the following cleaning are done   :
 
 #### clinicals_trials
 Concerning the clinical_trials files, the folowwing preprocessing are done :
- 
+
 	            Removing the wrong id and setting a proper one
 	            Formatting the datetime column to have the same format for each column
 	            Cleaning the title column by removing unnecessary double quote chracter
