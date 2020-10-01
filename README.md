@@ -71,7 +71,7 @@ Check the requirement file to know what need to be installed apart from python.
 			python -m datapipeline --task preprocess
 
 <p>
-The preprocess stage allow you to preprocess and clean :
+>The preprocess stage allow you to preprocess and clean :
 
 
  -	The data is loaded from the data/raw repo
@@ -107,7 +107,7 @@ The process stage allow you to transform the cleaned data into a bond graph whic
 is represented throught four differents files linked through there foreign keys
 >pubmed.json, clinical_trials.json, drug.json, journal.json
 
-To get to this result the following processing stages were required :
+>To get to this result the following processing stages were required :
 	-	Storing all relevant informationa about each files in a class of object called a file_object
 	-	Loading the data and stored them in dictionary of elment of the class dataset_object which contains the data and the category of that data
 	-	Creating a dictionary with the drug name as key and the atccode as value
