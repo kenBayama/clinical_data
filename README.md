@@ -2,9 +2,8 @@ This Project is a project of a Data Pipeline processing semi structured data fro
 
 
 ### Environnement ###
-Python3.8
 
-Check the requirement file to know what need to be installed apart from python.
+Python3.8
 
 
 ### Project Structure 
@@ -31,7 +30,6 @@ Check the requirement file to know what need to be installed apart from python.
 │	    │   ├── copy.py                 copy functions
 │	    │   ├── io.py                   IO functions
 │	    │   └── loggers.py              Loggers
-
 │	    ├── test/                       Testing environment
 │	    │   ├── preprocess/
 │	    │   ├── process/
