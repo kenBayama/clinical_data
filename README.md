@@ -48,7 +48,7 @@ datapipeline/                       Root project directory
 ├── setup.py                        Installing the package
 ├── requirements.txt                Lists dependencies
 └── LICENSE.md         
-
+</blockquote>  
 
 ### Lauch the project ###
 
