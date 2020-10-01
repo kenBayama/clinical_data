@@ -120,30 +120,30 @@ To get to this result the following processing stages were required :
 
 Preparation
 
-	-	Storing all relevant informationa about each files in a class of object called a file_object
-	-	Loading the data and stored them in dictionary of elment of the class dataset_object which contains the data and the category of that data
-	-	Creating a dictionary with the drug name as key and the atccode as value
+	Storing all relevant informationa about each files in a class of object called a file_object
+	Loading the data and stored them in dictionary of elment of the class dataset_object which contains the data and the category of that data
+	Creating a dictionary with the drug name as key and the atccode as value
 
 Processing First Stage: 
 
-	-	Processing the data from clinical_trials and pubmed sources by :
+-	Processing the data from clinical_trials and pubmed sources by :
 
-			Finding the drugs name in each scientic title or title column
-			Turning every letter in uppercase for latter use
-			Renaming the date column
-			Producing new dataset from clinicals_trials and pubmed
+		Finding the drugs name in each scientic title or title column
+		Turning every letter in uppercase for latter use
+		Renaming the date column
+		Producing new dataset from clinicals_trials and pubmed
 
 Processing Second Stage: 
 
-	-	Creating the journal data from the new dataset from clinicals_client and pubmed by :
+-	Creating the journal data from the new dataset from clinicals_client and pubmed by :
 
-            Keeping only the journal, date_mention and atccode column
-            Joining the two dataframe.
-            Turning every letter to uppercase
-            Grouping by the column journal
-            Aggregating by concatenation of string 
-            Cleaning by using the clean_column function
-            Creating an Index
+        Keeping only the journal, date_mention and atccode column
+        Joining the two dataframe.
+        Turning every letter to uppercase
+        Grouping by the column journal
+        Aggregating by concatenation of string 
+        Cleaning by using the clean_column function
+        Creating an Index
 
 
 ***Data Model :*** 
