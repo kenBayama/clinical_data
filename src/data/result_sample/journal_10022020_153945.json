@@ -7,7 +7,7 @@
       "01/02/2020"
     ],
     "id": "0",
-    "journal": "AMERICAN JOURNAL OF VETERINARY RESEARCH"
+    "journal": "American journal of veterinary research"
   },
   {
     "atccode": [
@@ -17,18 +17,18 @@
       "01/01/2020"
     ],
     "id": "1",
-    "journal": "H\u00d4PITAUX UNIVERSITAIRES DE GEN\u00c8VE"
+    "journal": "H\u00f4pitaux Universitaires de Gen\u00e8ve"
   },
   {
     "atccode": [
       "R01AD"
     ],
     "date_mention": [
-      "03/01/2020",
-      "01/01/2020"
+      "01/01/2020",
+      "03/01/2020"
     ],
     "id": "2",
-    "journal": "JOURNAL OF BACK AND MUSCULOSKELETAL REHABILITATION"
+    "journal": "Journal of back and musculoskeletal rehabilitation"
   },
   {
     "atccode": [
@@ -37,11 +37,11 @@
     ],
     "date_mention": [
       "01/01/2020",
-      "27/04/2020",
-      "01/01/2019"
+      "01/01/2019",
+      "27/04/2020"
     ],
     "id": "3",
-    "journal": "JOURNAL OF EMERGENCY NURSING"
+    "journal": "Journal of emergency nursing"
   },
   {
     "atccode": [
@@ -51,7 +51,7 @@
       "01/01/2020"
     ],
     "id": "4",
-    "journal": "JOURNAL OF FOOD PROTECTION"
+    "journal": "Journal of food protection"
   },
   {
     "atccode": [
@@ -61,7 +61,7 @@
       "01/01/2020"
     ],
     "id": "5",
-    "journal": "JOURNAL OF PHOTOCHEMISTRY AND PHOTOBIOLOGY. B, BIOLOGY"
+    "journal": "Journal of photochemistry and photobiology. B, Biology"
   },
   {
     "atccode": [
@@ -72,7 +72,17 @@
       "01/01/2020"
     ],
     "id": "6",
-    "journal": "PSYCHOPHARMACOLOGY"
+    "journal": "Psychopharmacology"
+  },
+  {
+    "atccode": [
+      "A04AD"
+    ],
+    "date_mention": [
+      "01/02/2019"
+    ],
+    "id": "7",
+    "journal": "The Journal of pediatrics"
   },
   {
     "atccode": [
@@ -82,8 +92,8 @@
       "02/01/2020",
       "03/01/2020"
     ],
-    "id": "7",
-    "journal": "THE JOURNAL OF ALLERGY AND CLINICAL IMMUNOLOGY. IN PRACTICE"
+    "id": "8",
+    "journal": "The journal of allergy and clinical immunology. In practice"
   },
   {
     "atccode": [
@@ -91,20 +101,10 @@
       "A03BA"
     ],
     "date_mention": [
-      "03/01/2020",
-      "01/01/2020"
-    ],
-    "id": "8",
-    "journal": "THE JOURNAL OF MATERNAL-FETAL & NEONATAL MEDICINE"
-  },
-  {
-    "atccode": [
-      "A04AD"
-    ],
-    "date_mention": [
-      "01/02/2019"
+      "01/01/2020",
+      "03/01/2020"
     ],
     "id": "9",
-    "journal": "THE JOURNAL OF PEDIATRICS"
+    "journal": "The journal of maternal-fetal & neonatal medicine"
   }
 ]

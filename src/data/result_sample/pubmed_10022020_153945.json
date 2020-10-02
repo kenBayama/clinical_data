@@ -1,0 +1,236 @@
+[
+  {
+    "atccode": [
+      "A04AD"
+    ],
+    "date_mention": "01/01/2019",
+    "id": 0,
+    "journal": "Journal of emergency nursing",
+    "title": "A 44-year-old man with erythema of the face diphenhydramine, neck, and chest, weakness, and palpitations"
+  },
+  {
+    "atccode": [
+      "A04AD"
+    ],
+    "date_mention": "01/01/2019",
+    "id": 1,
+    "journal": "Journal of emergency nursing",
+    "title": "An evaluation of benadryl, pyribenzamine, and other so-called diphenhydramine antihistaminic drugs in the treatment of allergy."
+  },
+  {
+    "atccode": [
+      "A04AD"
+    ],
+    "date_mention": "01/02/2019",
+    "id": 2,
+    "journal": "The Journal of pediatrics",
+    "title": "Diphenhydramine hydrochloride helps symptoms of ciguatera fish poisoning."
+  },
+  {
+    "atccode": [
+      "S03AA"
+    ],
+    "date_mention": "01/01/2020",
+    "id": 3,
+    "journal": "Journal of food protection",
+    "title": "Tetracycline Resistance Patterns of Lactobacillus buchneri Group Strains."
+  },
+  {
+    "atccode": [
+      "S03AA"
+    ],
+    "date_mention": "01/02/2020",
+    "id": 4,
+    "journal": "American journal of veterinary research",
+    "title": "Appositional Tetracycline bone formation rates in the Beagle."
+  },
+  {
+    "atccode": [
+      "S03AA",
+      "V03AB"
+    ],
+    "date_mention": "01/01/2020",
+    "id": 5,
+    "journal": "Psychopharmacology",
+    "title": "Rapid reacquisition of contextual fear following extinction in mice: effects of amount of extinction, tetracycline acute ethanol withdrawal, and ethanol intoxication."
+  },
+  {
+    "atccode": [
+      "A01AD"
+    ],
+    "date_mention": "02/01/2020",
+    "id": 6,
+    "journal": "The journal of allergy and clinical immunology. In practice",
+    "title": "The High Cost of Epinephrine Autoinjectors and Possible Alternatives."
+  },
+  {
+    "atccode": [
+      "A01AD"
+    ],
+    "date_mention": "03/01/2020",
+    "id": 7,
+    "journal": "The journal of allergy and clinical immunology. In practice",
+    "title": "Time to epinephrine treatment is associated with the risk of mortality in children who achieve sustained ROSC after traumatic out-of-hospital cardiac arrest."
+  },
+  {
+    "atccode": [
+      "6302001"
+    ],
+    "date_mention": "01/01/2020",
+    "id": 8,
+    "journal": "Journal of photochemistry and photobiology. B, Biology",
+    "title": "Gold nanoparticles synthesized from Euphorbia fischeriana root by green route method alleviates the isoprenaline hydrochloride induced myocardial infarction in rats."
+  },
+  {
+    "atccode": [
+      "R01AD"
+    ],
+    "date_mention": "01/01/2020",
+    "id": 9,
+    "journal": "The journal of maternal-fetal & neonatal medicine",
+    "title": "Clinical implications of umbilical artery Doppler changes after betamethasone administration"
+  },
+  {
+    "atccode": [
+      "R01AD"
+    ],
+    "date_mention": "01/01/2020",
+    "id": 10,
+    "journal": "Journal of back and musculoskeletal rehabilitation",
+    "title": "Effects of Topical Application of Betamethasone on Imiquimod-induced Psoriasis-like Skin Inflammation in Mice."
+  },
+  {
+    "atccode": [],
+    "date_mention": "03/01/2020",
+    "id": 11,
+    "journal": "Journal of back and musculoskeletal rehabilitation",
+    "title": "Comparison of pressure release, phonophoresis and dry needling in treatment of latent myofascial trigger point of upper trapezius muscle."
+  },
+  {
+    "atccode": [
+      "A03BA",
+      "R01AD"
+    ],
+    "date_mention": "03/01/2020",
+    "id": 12,
+    "journal": "The journal of maternal-fetal & neonatal medicine",
+    "title": "Comparison of pressure BETAMETHASONE release, phonophoresis and dry needling in treatment of latent myofascial trigger point of upper trapezius ATROPINE muscle."
+  },
+  {
+    "atccode": [
+      "A04AD"
+    ],
+    "date_mention": "01/01/2019",
+    "id": 0,
+    "journal": "Journal of emergency nursing",
+    "title": "A 44-year-old man with erythema of the face diphenhydramine, neck, and chest, weakness, and palpitations"
+  },
+  {
+    "atccode": [
+      "A04AD"
+    ],
+    "date_mention": "01/01/2019",
+    "id": 1,
+    "journal": "Journal of emergency nursing",
+    "title": "An evaluation of benadryl, pyribenzamine, and other so-called diphenhydramine antihistaminic drugs in the treatment of allergy."
+  },
+  {
+    "atccode": [
+      "A04AD"
+    ],
+    "date_mention": "01/02/2019",
+    "id": 2,
+    "journal": "The Journal of pediatrics",
+    "title": "Diphenhydramine hydrochloride helps symptoms of ciguatera fish poisoning."
+  },
+  {
+    "atccode": [
+      "S03AA"
+    ],
+    "date_mention": "01/01/2020",
+    "id": 3,
+    "journal": "Journal of food protection",
+    "title": "Tetracycline Resistance Patterns of Lactobacillus buchneri Group Strains."
+  },
+  {
+    "atccode": [
+      "S03AA"
+    ],
+    "date_mention": "01/02/2020",
+    "id": 4,
+    "journal": "American journal of veterinary research",
+    "title": "Appositional Tetracycline bone formation rates in the Beagle."
+  },
+  {
+    "atccode": [
+      "S03AA",
+      "V03AB"
+    ],
+    "date_mention": "01/01/2020",
+    "id": 5,
+    "journal": "Psychopharmacology",
+    "title": "Rapid reacquisition of contextual fear following extinction in mice: effects of amount of extinction, tetracycline acute ethanol withdrawal, and ethanol intoxication."
+  },
+  {
+    "atccode": [
+      "A01AD"
+    ],
+    "date_mention": "02/01/2020",
+    "id": 6,
+    "journal": "The journal of allergy and clinical immunology. In practice",
+    "title": "The High Cost of Epinephrine Autoinjectors and Possible Alternatives."
+  },
+  {
+    "atccode": [
+      "A01AD"
+    ],
+    "date_mention": "03/01/2020",
+    "id": 7,
+    "journal": "The journal of allergy and clinical immunology. In practice",
+    "title": "Time to epinephrine treatment is associated with the risk of mortality in children who achieve sustained ROSC after traumatic out-of-hospital cardiac arrest."
+  },
+  {
+    "atccode": [
+      "6302001"
+    ],
+    "date_mention": "01/01/2020",
+    "id": 8,
+    "journal": "Journal of photochemistry and photobiology. B, Biology",
+    "title": "Gold nanoparticles synthesized from Euphorbia fischeriana root by green route method alleviates the isoprenaline hydrochloride induced myocardial infarction in rats."
+  },
+  {
+    "atccode": [
+      "R01AD"
+    ],
+    "date_mention": "01/01/2020",
+    "id": 9,
+    "journal": "The journal of maternal-fetal & neonatal medicine",
+    "title": "Clinical implications of umbilical artery Doppler changes after betamethasone administration"
+  },
+  {
+    "atccode": [
+      "R01AD"
+    ],
+    "date_mention": "01/01/2020",
+    "id": 10,
+    "journal": "Journal of back and musculoskeletal rehabilitation",
+    "title": "Effects of Topical Application of Betamethasone on Imiquimod-induced Psoriasis-like Skin Inflammation in Mice."
+  },
+  {
+    "atccode": [],
+    "date_mention": "03/01/2020",
+    "id": 11,
+    "journal": "Journal of back and musculoskeletal rehabilitation",
+    "title": "Comparison of pressure release, phonophoresis and dry needling in treatment of latent myofascial trigger point of upper trapezius muscle."
+  },
+  {
+    "atccode": [
+      "A03BA",
+      "R01AD"
+    ],
+    "date_mention": "03/01/2020",
+    "id": 12,
+    "journal": "The journal of maternal-fetal & neonatal medicine",
+    "title": "Comparison of pressure BETAMETHASONE release, phonophoresis and dry needling in treatment of latent myofascial trigger point of upper trapezius ATROPINE muscle."
+  }
+]
