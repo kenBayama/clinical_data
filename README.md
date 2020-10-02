@@ -11,7 +11,7 @@ Python3.8
 ├── SQL/                                Repository with the two SQL request
 ├── src/                                Contain all the source and the sample
 │	├── docs/                           Documentation (.md/.rst files)
-│	├── logs/                           Logfiles
+│	├── logs/                           Logfiles "Is created when you lauch the preprocess task"
 │	├── data/
 │	│   ├── raw/                        Raw Data
 │	│   ├── preprocessed/               Preprocessed Data. "Is created when you lauch the preprocess task"
