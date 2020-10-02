@@ -77,6 +77,6 @@ datapipeline_env/*
 
 # Peculiar
 
-#src/logs/*
+src/logs/*
 src/data/preprocessed/*
 src/data/processed/*
