@@ -36,9 +36,9 @@ Python3.8
 │	    │   │   ├── copy.py
 │	    │   │   └── io.py
 │	    ├── __main__.py                 Package execution entry point:
-│       └── run.py                      Called from __main__.py
-├── README.md                       	Intro to package
-├── requirements.txt                	Lists dependencies
+│	    └── run.py                      Called from __main__.py
+├── README.md                           Intro to package
+├── requirements.txt                    Lists dependencies
 └── LICENSE.md
 ```
 
@@ -50,7 +50,7 @@ Python3.8
 
 			pip install virtualenv
 			python3 -m venv datapipeline_env
-			.\env\Scripts\activate
+			.\datapipeline_env\Scripts\activate
 
 -	Install the required environnment for the project :
 	
