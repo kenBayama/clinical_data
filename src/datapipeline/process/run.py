@@ -30,7 +30,7 @@ def find_word_in_text(string, list_of_drug):
         if word.upper() in string.upper():
             drug_present.append(list_of_drug[word].strip())
 
-    return  ','.join(map(str, drug_present))
+    return  drug_present
 
 def clean_column(string):
     """
@@ -59,7 +59,6 @@ def process_data (dataset,list_of_drug,column_name):
         in order to make the foreign keys to the drug data:
 
             Finding the drugs name in each scientic title or title column
-            Turning every letter in uppercase for later use
             Renaming the date column
     Args:
         c_trials: pandas.dataframe 
@@ -72,7 +71,6 @@ def process_data (dataset,list_of_drug,column_name):
     """
     dataset['atccode'] = dataset[column_name].str.upper()\
         .apply(lambda string : find_word_in_text(string,list_of_drug))
-    dataset = dataset.apply(lambda x: x.astype(str).str.upper())
     dataset = dataset.rename(columns = {"date":"date_mention"})
 
     return dataset
@@ -85,7 +83,7 @@ def create_journal_ds(c_trials,pubmed):
 
             keeping only the journal, date_mention and atccode column
             Joining the two dataframe.
-            Turning every letter to uppercase
+            Transforming atccode column from list to string to a string separated by comma
             Grouping by the column journal
             Aggregating by concatenation of string 
             Cleaning by using the clean_column function
@@ -100,7 +98,7 @@ def create_journal_ds(c_trials,pubmed):
     """
     journal = pd.concat([pubmed[['journal','date_mention','atccode']],
     	c_trials[['journal','date_mention','atccode']]])
-    journal = journal.apply(lambda x: x.astype(str).str.upper())
+    journal['atccode'] = journal['atccode'].apply(lambda column :",".join(column))
     journal = journal.groupby('journal')\
     	.agg(lambda column: ",".join(column)).reset_index('journal')
     journal[['date_mention','atccode']] = journal[['date_mention','atccode']].applymap(clean_column)
@@ -147,19 +145,22 @@ def main(preprocess_repo,process_repo):
 	#prepare the clinical_trials and pubmed data to create the foreign keys 
 	#to drugs and for the implementation of the journal table data 
 
-	
-
     try:
-        prepared_c_trials = process_data(dict_ds['clinicaltrials']\
-            .dataset,list_of_drug,"scientific_title")
 
+        prepared_c_trials = process_data(dict_ds['clinicaltrials']\
+                .dataset,list_of_drug,"scientific_title")
+
+        
         preprared_pubmed = process_data(dict_ds['pubmed'].dataset,list_of_drug,
-            "title")
+                "title")
+
 
         processed_journal = create_journal_ds(prepared_c_trials,preprared_pubmed)
 
     except:
-        Processing_logger.error("An error was raised while preparing the journal data")
+        Processing_logger.error(" An error was raised while preparing the journal data")
+
+
 
     try:
 
