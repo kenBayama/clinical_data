@@ -24,6 +24,7 @@ logger = logging.getLogger(__name__)
 def main(task,path,dest):
     try:
         tasks[task](path,dest)
+        click.echo("the task "+task+" succeeded ! ")
     except:
         logger.error(f"Task {task} failed")
         raise

@@ -14,8 +14,8 @@ Python3.8
 │	├── logs/                           Logfiles
 │	├── data/
 │	│   ├── raw/                        Raw Data
-│	│   ├── preprocess/                 Preprocessed Data. "Is created when you lauch the preprocess task"
-│	│   ├── process/                    Processed Data. "Is created when you lauch the process task"
+│	│   ├── preprocessed/               Preprocessed Data. "Is created when you lauch the preprocess task"
+│	│   ├── processed/                  Processed Data. "Is created when you lauch the process task"
 │	│   ├── result_sample/              Example of the results
 │	│   ├── test/                       Result from the testing environment
 │	│   │   ├── raw                     
@@ -26,23 +26,19 @@ Python3.8
 │	    ├── preprocess/                 Preprocessing (.py) "Is created when you lauch the preprocess test task"
 │	    ├── process/                    Processing (.py) "Is created when you lauch the process test task"
 │	    ├── utils/                      Util functions used in source,
-│	    │   ├── __init__.py              
-│	    │   ├── copy.py                 copy functions
+│	    │   ├── copy.py                 Copy functions
 │	    │   ├── io.py                   IO functions
 │	    │   └── loggers.py              Loggers
 │	    ├── test/                       Testing environment
 │	    │   ├── preprocess/
 │	    │   ├── process/
 │	    │   ├── utils/
-│	    │   │   ├── __init__.py
 │	    │   │   ├── copy.py
 │	    │   │   └── io.py
-│	    │   └── __init__.py
 │	    ├── __main__.py                 Package execution entry point:
-│	    ├── __init__.py                 "python -m datapipeline"
 │       └── run.py                      Called from __main__.py
-├── README.md                       Intro to package
-├── requirements.txt                Lists dependencies
+├── README.md                       	Intro to package
+├── requirements.txt                	Lists dependencies
 └── LICENSE.md
 ```
 
@@ -53,7 +49,7 @@ Python3.8
 -	Install and create a virtual environment :
 
 			pip install virtualenv
-			python3 -m venv env
+			python3 -m venv datapipeline_env
 			.\env\Scripts\activate
 
 -	Install the required environnment for the project :
@@ -69,7 +65,7 @@ Python3.8
 
 -	Lauch **the preprocess stage** :
 		
-			python -m datapipeline --task preprocess "data/raw/" "data/preprocess/"
+			python -m datapipeline --task preprocess "data/raw/" "data/preprocessed/"
 
 
 
@@ -99,12 +95,12 @@ Concerning the clinical_trials files, the following preprocessing are done :
 
 	           No cleaning required. 
 
-The result are stored in **the data/preprocess repo**
+The result are stored in **the data/preprocessed repo**
 
 
 -	Lauch **the process stage** :
 
-			python -m datapipeline --task process "data/preprocess/" "data/process/"
+			python -m datapipeline --task process "data/preprocessed/" "data/processed/"
 
 ***The process stage allow you to transform the cleaned data into a bond graph which is represented throught three differents files linked through there foreign keys to one file, drug.json :***
 
@@ -142,7 +138,7 @@ To get to this result the following processing stages were required :
         Cleaning by using the clean_column function
         Creating an Index
 
-The result are stored in **the data/process repo**
+The result are stored in **the data/processed repo**
 
 
 ***Data Model :*** 

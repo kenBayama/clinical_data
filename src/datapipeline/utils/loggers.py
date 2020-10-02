@@ -42,7 +42,7 @@ Returns:
 
 
 
-logging.basicConfig(filename = "logs/.logs",
+logging.basicConfig(filename = "logs/datapipeline.logs",
 
                     filemode='a',
 
