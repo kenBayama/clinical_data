@@ -73,7 +73,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-datapipeline_env/
-logs/*
+datapipeline_env/*
+#logs/*
 data/preprocessed/*
 data/processed/*
