@@ -32,13 +32,13 @@
   },
   {
     "atccode": [
-      "A04AD",
-      "A01AD"
+      "A01AD",
+      "A04AD"
     ],
     "date_mention": [
+      "27/04/2020",
       "01/01/2019",
-      "01/01/2020",
-      "27/04/2020"
+      "01/01/2020"
     ],
     "id": "3",
     "journal": "JOURNAL OF EMERGENCY NURSING"
@@ -65,8 +65,8 @@
   },
   {
     "atccode": [
-      "V03AB",
-      "S03AA"
+      "S03AA",
+      "V03AB"
     ],
     "date_mention": [
       "01/01/2020"

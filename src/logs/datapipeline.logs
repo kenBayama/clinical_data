@@ -1,0 +1,5 @@
+2020/10/02 14:26:33,761 -- OVERALL PROCESSING STEP : INFO : the task preprocess succeeded ! 
+2020/10/02 14:27:43,807 -- OVERALL PROCESSING STEP : INFO : the task preprocess succeeded ! 
+2020/10/02 14:29:10,566 -- OVERALL PROCESSING STEP : INFO : the task process succeeded ! 
+2020/10/02 14:31:25,713 -- OVERALL PROCESSING STEP : INFO : the task 'process' succeeded ! 
+2020/10/02 14:31:31,195 -- OVERALL PROCESSING STEP : INFO : the task 'preprocess' succeeded ! 

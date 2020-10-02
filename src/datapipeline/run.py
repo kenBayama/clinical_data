@@ -2,7 +2,7 @@ import click
 import pandas as pd
 import logging
 
-
+from datapipeline.utils.loggers import Main_logger
 from datapipeline.test.preprocess.run import main as test_preprocess_main
 from datapipeline.test.process.run import main as test_process_main
 from datapipeline.preprocess.run import main as preprocess_main
@@ -18,15 +18,14 @@ tasks = {
 
 }
 
-logger = logging.getLogger(__name__)
-
 
 def main(task,path,dest):
     try:
         tasks[task](path,dest)
-        click.echo("the task "+task+" succeeded ! ")
+        click.echo(f"the task {task} succeeded ! ")
+        Main_logger.info(f"the task {task} succeeded ! ")
     except:
-        logger.error(f"Task {task} failed")
+        Main_logger.error(f"Task {task} failed")
         raise
 
 

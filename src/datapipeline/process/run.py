@@ -5,6 +5,7 @@ import os
 
 from datapipeline.utils.io  import (load_data, write_preprocessed_data, 
 									create_file_object, file_object)
+from datapipeline.utils.loggers import Processing_logger
 
 
 def find_word_in_text(string, list_of_drug):

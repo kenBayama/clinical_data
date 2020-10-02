@@ -56,6 +56,8 @@ logging.basicConfig(filename = "logs/datapipeline.logs",
 
 # Initialize 4 Loggers
 
+Main_logger = logging.getLogger('OVERALL PROCESSING STEP')
+
 Preprocessing_logger = logging.getLogger('PREPROCESSING STEP')
 
 Processing_logger = logging.getLogger('PROCESSING STEP')
