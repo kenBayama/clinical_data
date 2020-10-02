@@ -3,7 +3,7 @@
 
 
 import logging
-
+import os
 
 
 """
@@ -40,7 +40,8 @@ Returns:
 
 """
 
-
+if not os.path.exists("logs"):
+        os.makedirs("logs")
 
 logging.basicConfig(filename = "logs/datapipeline.logs",
 
